@@ -2,9 +2,71 @@
 Colors used:
 Primary Color (White): #FFFFFF;
 Secondary Color (Light Grey): #DCDCDC;
+CTA Color: #3333ff
 */
 
 body {
-  background-color: #DCDCDC;
+  background-color: #ffffff;
   font-family: 'Work Sans', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.05em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+.button {
+  display: inline-block;
+  background-color: #3333ff;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #3333ff; /* width of the border, type, color */
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #3333ff;
+  text-transform: uppercase;
+  border: 2px solid #3333ff;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button.contact:hover {
+  background-color: #3333ff;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#contact {
+  background-color: #d6d6d6;
+  text-align: center;
 }
