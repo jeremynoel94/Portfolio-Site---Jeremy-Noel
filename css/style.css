@@ -2,11 +2,17 @@
 Colors used:
 Primary Color (White): #FFFFFF;
 Secondary Color (Light Grey): #DCDCDC;
-CTA Color: #3333ff
+CTA Color: #3333FF
 */
+
+/* General Styling */
 
 * {
   box-sizing: border-box;
+}
+
+main {
+  padding-top: 133px;
 }
 
 body {
@@ -26,21 +32,95 @@ h1 {
 
 h2 {
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 1.5em;
-  font-weight: 400;
+  font-size: 1.25em;
+  font-weight: 500;
 }
 h4 {
-  font-size: 1.05em;
+  font-size: 1.0em;
   font-weight: 400;
 }
 
 img {
   width: 100%;
 }
+
+/* Container Styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.container > h2 {
+  text-align: center;
+}
+
+/* Row Styling */
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+
+/* Nav Bar Styling */
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow:    0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow:         0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Hero Layout Styling */
+
+#hero {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* CTA Button Styling */
 
 .button {
   display: inline-block;
@@ -58,6 +138,7 @@ img {
   color: #3333ff;
   text-transform: uppercase;
   border: 2px solid #3333ff;
+  margin-bottom: 20px;
 }
 
 .button:hover {
@@ -70,21 +151,36 @@ img {
   text-decoration: none;
 }
 
+/* Contact Styling */
+
 #contact {
   background-color: #d6d6d6;
   text-align: center;
+  padding-bottom: 1px;
 }
 
-/* Layout styling */
-
-.container {
-  padding: 0 15px;
+#contact > div > h2 {
+  padding-top: 30px;
 }
 
-.row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+#contactbutton {
+  width: 10%;
+  height: 10%
 }
 
-#work .row {
-  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; 
+#contact > div > .p2 {
+  padding: 10px;
+}
+
+/* About Page Styling */
+
+.about {
+  margin: 10px;
+  padding-top: 20px;
+}
+
+/* Project Styling */
+
+#casestudy {
+  padding-top: 165px;
 }
