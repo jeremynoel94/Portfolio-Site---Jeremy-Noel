@@ -25,6 +25,7 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.5em;
   font-weight: 700;
@@ -61,7 +62,7 @@ img {
 /* Row Styling */
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 30px 0; /* 25px top and bottom, 0 left and right */
 }
 
 #work .row {
@@ -128,11 +129,13 @@ nav > ul > li > a {
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 7px;
   border-bottom: 2px solid #3333ff; /* width of the border, type, color */
   transition: 0.2s opacity;
   text-decoration: none;
+  transition-duration: 0.2s opacity;
 }
+
 .button.contact {
   background-color: transparent;
   color: #3333ff;
@@ -165,7 +168,8 @@ nav > ul > li > a {
 
 #contactbutton {
   width: 10%;
-  height: 10%
+  height: 10%;
+  text-decoration: none;
 }
 
 #contact > div > .p2 {
@@ -177,10 +181,112 @@ nav > ul > li > a {
 .about {
   margin: 10px;
   padding-top: 20px;
+  text-align: center;
+}
+
+.mystory {
+  text-align: center;
 }
 
 /* Project Styling */
 
 #casestudy {
   padding-top: 165px;
+}
+
+/* Media Queries */
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  nav > ul > li {
+    float: left;
+    padding-top: 10px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #hero {
+    text-align: center;
+  }
+
+  #hero span {
+  display: block;
+  }
+
+  .col-md-6 {
+  width: 50%;
+  }
+
+  [class*="col-"] {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+
+  h3 {
+    display: inline;
+  }
+
+  #casestudy {
+    padding-top: 125px;
+  }
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+  .col-lg-7 {
+  width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  #casestudy {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
