@@ -45,6 +45,11 @@ h4 {
   font-weight: 400;
 }
 
+h5 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
 img {
   width: 100%;
   border-radius: 15px;
@@ -213,9 +218,10 @@ nav > ul > li > a {
   padding-top: 30px;
 }
 
-#contactbutton {
+.contactbutton {
   width: 10%;
   height: 10%;
+  padding: 10px
   text-decoration: none;
 }
 
@@ -233,6 +239,17 @@ nav > ul > li > a {
 
 .mystory {
   text-align: center;
+}
+
+.story {
+  padding: 10px;
+}
+
+.profilepic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 /* Project Styling */
@@ -299,8 +316,21 @@ Medium devices (640px and larger)
     display: inline;
   }
 
+  .profilepic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
   #casestudy {
     padding-top: 125px;
+  }
+
+  .contactbutton {
+    width: 5%;
+    height: 5%;
+    text-decoration: none;
   }
 
 }
