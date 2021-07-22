@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/092d67c8fd.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <!-- begin body -->
@@ -17,14 +18,17 @@
 <!-- begin header -->
   <header id="navbar">
     <div class="container">
-      <a href="index.html"><img class="logo" src="https://via.placeholder.com/150x50?text=Home" alt="Jeremy Noel"></a> <!-- Placeholder image -->
-      <nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img class="logo" src="https://via.placeholder.com/150x50?text=Home" alt="Jeremy Noel"></a> <!-- Placeholder image -->
+        <nav>
           <ul>
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
-      </nav>
+        </nav>
+      </div>
     </div>
   </header>
 
