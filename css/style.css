@@ -89,7 +89,7 @@ header {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 200px;
 }
 
 nav > ul {
@@ -368,9 +368,11 @@ Medium devices (640px and larger)
   }
 
   .contactbutton {
-    width: 5%;
-    height: 5%;
+    width: 4%;
+    height: 4%;
     text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
 }
