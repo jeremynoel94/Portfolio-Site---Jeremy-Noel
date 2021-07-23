@@ -89,7 +89,7 @@ header {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 125px;
 }
 
 nav > ul {
@@ -118,7 +118,7 @@ nav > ul > li > a {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 12px;
+  top: 0px;
   font-size: 20px;
   padding-right: 0;
 }
@@ -130,6 +130,7 @@ nav > ul > li > a {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
+
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
@@ -318,6 +319,14 @@ Medium devices (640px and larger)
 
   .navtoggle li:last-child {
   display: none;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0px 0 0;
+  }
+
+  .logo {
+    max-width: 200px;
   }
 
   main {
