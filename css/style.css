@@ -7,7 +7,6 @@ CTA Color: #3333FF
 
 /* General Styling */
 
-
 * {
   box-sizing: border-box;
 }
@@ -41,8 +40,9 @@ h3 {
   font-size: 1.25em;
   font-weight: 500;
 }
+
 h4 {
-  font-size: 1.0em;
+  font-size: 1em;
   font-weight: 400;
 }
 
@@ -73,7 +73,8 @@ img {
 }
 
 #work .row {
-  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 }
 
 /* Nav Bar Styling */
@@ -82,8 +83,8 @@ header {
   background-color: #ffffff;
   padding: 10px 0 4px;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow:    0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-  box-shadow:         0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
 }
@@ -123,23 +124,18 @@ nav > ul > li > a {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
+  padding: 10px 0;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-}
-
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-
 
 /* Hero Layout Styling */
 
@@ -157,10 +153,11 @@ nav > ul > li > a {
 
 /* CSS Sun Animation Styling */
 
+/*
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
 }
 
 .sun {
@@ -173,9 +170,10 @@ nav > ul > li > a {
 
 /* CSS Cloud-front Animation Styling */
 
+/*
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
 }
 
 .cloud-front {
@@ -188,9 +186,10 @@ nav > ul > li > a {
 
 /* CSS Cloud-back Animation Styling */
 
+/*
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
 }
 
 .cloud-back {
@@ -199,7 +198,7 @@ nav > ul > li > a {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
-}
+} */
 
 /* CTA Button Styling */
 
@@ -213,7 +212,7 @@ nav > ul > li > a {
   border-bottom: 2px solid #3333ff; /* width of the border, type, color */
   transition: 0.2s opacity;
   text-decoration: none;
-  transition-duration: 0.2s opacity;
+  transition-duration: 0.2s;
 }
 
 .button.contact {
@@ -228,6 +227,7 @@ nav > ul > li > a {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button.contact:hover {
   background-color: #3333ff;
   color: #ffffff;
@@ -249,7 +249,6 @@ nav > ul > li > a {
 .contactbutton {
   width: 10%;
   height: 10%;
-  padding: 10px
   text-decoration: none;
 }
 
@@ -304,7 +303,7 @@ Medium devices (640px and larger)
   }
 
   nav > ul {
-  margin: 1em 0;
+    margin: 1em 0;
   }
 
   nav > ul > li {
@@ -314,11 +313,11 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
+    display: inline-block;
   }
 
   .navtoggle li:last-child {
-  display: none;
+    display: none;
   }
 
   .navtoggle.responsive nav {
@@ -342,23 +341,23 @@ Medium devices (640px and larger)
   }
 
   #hero span {
-  display: block;
+    display: block;
   }
 
   .col-md-6 {
-  width: 50%;
+    width: 50%;
   }
 
   [class*="col-"] {
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
   }
 
   h3 {
@@ -383,16 +382,14 @@ Medium devices (640px and larger)
     margin-left: 5px;
     margin-right: 5px;
   }
-
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
   .col-lg-7 {
-  width: 58.33%;
+    width: 58.33%;
   }
 
   .col-lg-5 {
@@ -400,9 +397,9 @@ Large devices (1024px or larger)
   }
 
   .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #casestudy {
@@ -410,7 +407,6 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
-
 }
 
 /* ==============================

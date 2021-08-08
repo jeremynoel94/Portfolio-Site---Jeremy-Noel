@@ -1,8 +1,8 @@
-function menuToggle() {
-  var x = document.getElementById('myNavtoggle');
+function menuToggle () { // eslint-disable-line no-unused-vars
+  var x = document.getElementById('myNavtoggle')
   if (x.className === 'navtoggle') {
-    x.className += ' responsive';
+    x.className += ' responsive'
   } else {
-    x.className = 'navtoggle';
+    x.className = 'navtoggle'
   }
 }
