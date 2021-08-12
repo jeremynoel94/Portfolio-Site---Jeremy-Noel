@@ -53,7 +53,7 @@ h5 {
 
 img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 /* Container Styling */
@@ -208,7 +208,7 @@ nav > ul > li > a {
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-radius: 7px;
+  border-radius: 3px;
   border-bottom: 2px solid #3333ff; /* width of the border, type, color */
   transition: 0.2s opacity;
   text-decoration: none;
@@ -283,6 +283,10 @@ nav > ul > li > a {
   margin-left: 0px; /* Same width as the sidebar + left position in px */
   padding: 40px 10px 0px 10px;
   width: 100%;
+}
+
+#casestudy img {
+  border-radius: 0px;
 }
 
 .dropdown-content {
@@ -377,7 +381,7 @@ Medium devices (640px and larger)
   }
 
   #casestudy {
-    padding-top: 90px;
+    /* padding-top: 90px; */
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -401,18 +405,18 @@ Medium devices (640px and larger)
   }
 
   /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+  .dropup {
     position: fixed;
+    bottom: 0;
+    padding-left: 0;
     display: inline-block;
-    float: left;
-    padding-top: 83px;
-    padding-right: 40px;
   }
 
   /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+  .dropup-content {
     display: none;
     position: absolute;
+    bottom: 50px;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -420,7 +424,7 @@ Medium devices (640px and larger)
   }
 
   /* Links inside the dropdown */
-  .dropdown-content a {
+  .dropup-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -428,13 +432,18 @@ Medium devices (640px and larger)
   }
 
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropup-content a:hover {background-color: #ddd;}
 
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropup:hover .dropup-content {display: block;}
 
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #4444ff;}
+  .dropup:hover .dropbtn {background-color: #4444ff;}
+
+  #casestudy img {
+    padding-top: 65px;
+    /* padding-left: 90px; */
+  }
 }
 
 /* ==============================
@@ -456,7 +465,7 @@ Large devices (1024px or larger)
   }
 
   #casestudy {
-    padding-top: 90px;
+    /* padding-top: 90px; */
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -468,7 +477,7 @@ X-large devices (1440px or larger)
 @media only screen and (min-width: 1500px) {
 
   #casestudy {
-    padding-top: 90px;
+    /* padding-top: 90px; */
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
