@@ -148,7 +148,6 @@ nav > ul > li > a {
 
 #hero h1 {
   text-align: center;
-  padding-top: 20px;
 }
 
 /* CSS Sun Animation Styling */
@@ -242,6 +241,7 @@ nav > ul > li > a {
 
 #contact > div > h2 {
   padding-top: 30px;
+  text-align: center;
 }
 
 .contactbutton {
@@ -275,6 +275,7 @@ nav > ul > li > a {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+  margin-top: 20px;
 }
 
 /* Project Styling */
@@ -346,11 +347,16 @@ Medium devices (640px and larger)
   }
 
   #hero {
-    text-align: center;
+    text-align: left;
+    line-height: 30px;
   }
 
   #hero span {
     display: block;
+  }
+
+  #hero h1 {
+    text-align: left;
   }
 
   .col-md-6 {
@@ -378,6 +384,7 @@ Medium devices (640px and larger)
     margin-left: auto;
     margin-right: auto;
     width: 40%;
+    margin-top: 20px;
   }
 
   #casestudy {
@@ -462,6 +469,10 @@ Large devices (1024px or larger)
     width: 41.66%;
   }
 
+  #hero h1 {
+    text-align: left;
+  }
+
   .container {
     max-width: 1200px;
     margin-left: auto;
@@ -483,5 +494,9 @@ X-large devices (1440px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #hero h1 {
+    text-align: left;
   }
 }
