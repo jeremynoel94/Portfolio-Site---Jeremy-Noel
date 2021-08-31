@@ -150,6 +150,12 @@ nav > ul > li > a {
   text-align: center;
 }
 
+#hero p {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
 /* CSS Sun Animation Styling */
 
 /*
@@ -347,7 +353,7 @@ Medium devices (640px and larger)
   }
 
   #hero {
-    text-align: left;
+    text-align: center;
     line-height: 30px;
   }
 
@@ -356,7 +362,12 @@ Medium devices (640px and larger)
   }
 
   #hero h1 {
-    text-align: left;
+    text-align: center;
+  }
+
+  #hero p {
+    width: 75%;
+    margin: auto;
   }
 
   .col-md-6 {
@@ -470,7 +481,12 @@ Large devices (1024px or larger)
   }
 
   #hero h1 {
-    text-align: left;
+    text-align: center;
+  }
+
+  #hero p {
+    width: 60%;
+    margin: auto;
   }
 
   .container {
@@ -496,7 +512,12 @@ X-large devices (1440px or larger)
     margin-right: auto;
   }
 
+  #hero p {
+    width: 60%;
+    margin: auto;
+  }
+
   #hero h1 {
-    text-align: left;
+    text-align: center;
   }
 }
