@@ -17,7 +17,8 @@ main {
 
 body {
   background-color: #ffffff;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   line-height: 1.6;
 }
@@ -38,7 +39,7 @@ h2 {
 
 h3 {
   font-size: 1.25em;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h4 {
@@ -49,6 +50,10 @@ h4 {
 h5 {
   font-size: 2.5em;
   font-weight: 700;
+}
+
+p {
+  font-weight: 300;
 }
 
 img {
@@ -69,7 +74,7 @@ img {
 /* Row Styling */
 
 .row {
-  margin: 30px 0; /* 25px top and bottom, 0 left and right */
+  margin: 30px 0;
 }
 
 #work .row {
@@ -101,9 +106,9 @@ nav > ul {
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
+  padding: 0 20px;
+  text-transform: none;
+  font-weight: 300;
   color: #000000;
   text-decoration: none;
 }
@@ -156,62 +161,13 @@ nav > ul > li > a {
   text-align: center;
 }
 
-/* CSS Sun Animation Styling */
-
-/*
-@keyframes color-change {
-  0% { fill: #edc655; }
-  50% { fill: #fcffad; }
-  100% { fill: #f76414; }
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-/* CSS Cloud-front Animation Styling */
-
-/*
-@keyframes cloud-move {
-  from { transform: translate(0, 50px); }
-  to { transform: translate(200px, 50px); }
-}
-
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-/* CSS Cloud-back Animation Styling */
-
-/*
-@keyframes cloud-move-reverse {
-  from { transform: translate(446px, 48px); }
-  to { transform: translate(100px, 48px); }
-}
-
-.cloud-back {
-  animation-duration: 34s;
-  animation-name: cloud-move-reverse;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-} */
-
 /* CTA Button Styling */
 
 .button {
   display: inline-block;
   background-color: #3333ff;
   color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
+  font-weight: 300;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #3333ff; /* width of the border, type, color */
@@ -273,7 +229,15 @@ nav > ul > li > a {
 }
 
 .story {
-  padding: 10px;
+  max-width: 650px;
+  text-align: center;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.resume {
+  height: 125px;
 }
 
 .profilepic {
@@ -281,7 +245,8 @@ nav > ul > li > a {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  margin-top: 20px;
+  margin-top: 50px;
+  max-width: 250px;
 }
 
 /* Project Styling */
@@ -395,7 +360,7 @@ Medium devices (640px and larger)
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   #casestudy {
